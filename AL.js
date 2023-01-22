@@ -1,4 +1,4 @@
-function loadXMLDoc() {
+function loadXMLDoc(AL) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -6,7 +6,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "./AL.xml", true);
+  xmlhttp.open("GET", "AL.xml", true);
   xmlhttp.send();
 }
 function myFunction(xml) {
