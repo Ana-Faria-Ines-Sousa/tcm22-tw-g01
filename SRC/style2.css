@@ -12,6 +12,7 @@ html {
     font-family: Hack, monospace;
     position: relative;
     place-content: center;
+    
 
 }
 
@@ -211,15 +212,15 @@ p {
 }
 
 #text1 {
-    grid-column: col-start 1/ span 1;
-    grid-row: 1;
+    grid-column: col-start 2/ span 1;
+    grid-row: 2;
     padding: 20px;
     float: right;
     line-height: normal;
 }
 
 .item2 {
-    grid-column: col-start 2 / span 1;
+    grid-column: col-start 4 / span 1;
     grid-row: 3;
     float: right;
     width: 30vw;
