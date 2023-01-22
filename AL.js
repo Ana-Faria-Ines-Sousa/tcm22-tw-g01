@@ -6,7 +6,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "AL.xml", true);
+  xmlhttp.open("GET", "./AL.xml", true);
   xmlhttp.send();
 }
 function myFunction(xml) {
