@@ -209,19 +209,38 @@ img {
 
 .p1-imageR {
     float: right;
+    margin: 10px;
 }
 
 .p1-imageL {
     float: left;
+   margin: 27px;
 }
-.video{
+
+.points {
+    height: 15vw;
+    width: 15vw;
+    margin: 10px;
+}
+.shorts{
+    height: 35vw;
+    width: 25vw;
+    margin: 10px;}
+.video {
     float: inherit;
     height: 570px;
     width: 80%;
 }
+
 .item1 p,
-.item2 p, .item3 p {
-    line-height:1.5em;
+.item2 p,
+.item3 p,
+.item4 p,
+.item5 p,
+.item6 p,
+.item7 p {
+    line-height: 1.3em;
+    font-weight:600;
     text-transform: none;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
