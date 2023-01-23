@@ -81,7 +81,6 @@ a {
   grid-area: header;
   padding: 1px;
   color: white;
-  height: 2;
 }
 
 .header-image {
@@ -190,7 +189,7 @@ a {
 }
 .indextitle{
   margin:15px;
-  font-size:600;
+  font-size:1.875em;
 
 }
 img {
