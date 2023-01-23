@@ -1,12 +1,13 @@
+
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       console.log(xmlhttp);
-      myFunction(this);
+      myFunction(xmlhttp);
     }
   };
-  xmlhttp.open("GET", "AL.xml", true);
+  xmlhttp.open("GET", "./SRC/AL.xml", true);
   xmlhttp.send();
 }
 function myFunction(xml) {
@@ -24,4 +25,6 @@ function myFunction(xml) {
     x[i].getElementsByTagName("percentagem")[0].childNodes[0].nodeValue +
       "</td></tr>";
   }
+  console.log(table);
+  document.getElementById('demo').innerHTML = table
 }

@@ -1,3 +1,39 @@
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.main-head {
+    grid-area: header;
+    grid-column: col-start 1/ span 3;
+    grid-row: 1;
+}
+
+.item-nav {
+    grid-area: nav;
+}
+
+.item-content {
+    grid-area: content;
+}
+
+.item-footer {
+    grid-area: footer;
+}
+
+.grid {
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: 50px 150px 50px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "content content content"
+        " footer footer footer"
+    ;
+}
+
+/* Grid */
+
 * {
     box-sizing: border-box;
     margin: 20px;
@@ -12,11 +48,9 @@ html {
     font-family: Hack, monospace;
     position: relative;
     place-content: center;
-    
-
 }
 
-.wrapper {
+.grid {
     width: 80%;
     margin: auto;
     align-content: flex-start;
@@ -35,25 +69,19 @@ a {
     font-weight: 400;
     transition: all 0.5s ease-in-out;
     position: relative;
-    text-transform: uppercase;
 }
 
 /*HEADER*/
 
-header {
-    grid-column: col-start 1/ span 3;
-    grid-row: 1;
-}
 
 .main-head {
     margin-right: auto;
     margin-left: auto;
-    width: calc(100% - (2 * var(--offset)));
+    width: inherit;
     grid-area: header;
     padding: 1px;
     color: white;
     height: 2;
-    border-radius: 5px;
 }
 
 .header-image {
@@ -61,13 +89,13 @@ header {
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-    width: 96.66%;
+    width: 100%;
     height: 92%;
-    left: 11px;
+    left: -3px;
     opacity: 5;
     align-content: flex-start;
     place-content: center;
-  
+
 }
 
 .header-text {
@@ -79,18 +107,14 @@ header {
     transform: translate(-50%, -50%);
     color: #ffffff;
     align-content: flex-start;
-}
 
+}
 
 /*HEADER*/
 
 /*NAVBAR*/
-.main-nav {
-    grid-column: col-start 1/ span 3;
-    grid-row: 2;
-}
 
-.main-nav {
+.item-nav {
     grid-area: nav;
     padding-top: 4px;
     object-fit: contain;
@@ -98,10 +122,12 @@ header {
     scroll-behavior: smooth;
     flex-direction: column;
     margin: 0;
-    width: 93.3%;
-    margin-left: 72px;
-    margin-top: -52px;
+    width: 99.9%;
+    height: 30%;
+    margin-left: 24px;
+    margin-top: -35px;
     border-radius: 5px;
+    margin-bottom: 40px;
 }
 
 .nav-font {
@@ -121,7 +147,6 @@ header {
     place-content: center;
 
 }
-
 
 .nav-font::before {
     content: attr(data-item);
@@ -146,140 +171,74 @@ header {
 
 /*CONTEUDO*/
 
-.wrapper {
-    display: grid;
-    gap: 20px;
-    width: 800px;
-    margin: 0 auto;
-    place-content: center;
-    gap: 5px;
-    text-align: center;
-    grid-template-columns: 1fr auto;
-    font-family: 1em Verdana, Geneva, Tahoma, sans-serif;
-    grid-template-areas:
-        "header"
-        "nav"
-        "content"
-        "footer";
-}
 
-.indextitle {
-    font-size: 25px;
-    margin: 0px;
-    padding: 0;
-}
-
-img {
-    height: 15vw;
-    width: 24vw;
-    margin: 10px;
-    align-content: space-around;
-    border-radius: 5px;
-
-}
-
-.content {
-    display: grid;
-    flex-direction: column;
-}
-
-.content {
+.item-content {
     grid-area: content;
-    margin: 0px;
     text-align: center;
-    margin: 20px;
+    margin: 0px;
     font-size: 15px;
     color: #ccc;
     text-transform: uppercase;
     font-weight: 600;
-    align-content: center;
+    text-align: center;
 }
 
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+.indextitleR {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-right: 10px;
+    padding: 0;
+    text-align: right;
+}
+
+.indextitleL {
+    font-size: 25px;
+    margin-left: 10px;
+    margin: 10px;
+    padding: 0;
+    text-align: left;
+}
+
+img {
+    height: 20vw;
+    width: 34vw;
+    margin: 10px;
+    align-content: space-around;
+    border-radius: 5px;
+}
+
+.p1-imageR {
+    float: right;
+}
+
+.p1-imageL {
+    float: left;
+}
+.video{
+    float: inherit;
+    height: 570px;
+    width: 80%;
+}
+.item1 p,
+.item2 p, .item3 p {
+    line-height:1.5em;
     text-transform: none;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.item1 {
-    grid-column: col-start 1 / span 1;
-    grid-row: 2;
-    float: left;
-    width: 30vw;
-    height: 20vw;
-    padding: 10px;
-    margin: 0;
-}
-
-#text1 {
-    grid-column: col-start 2/ span 1;
-    grid-row: 2;
-    padding: 20px;
-    float: right;
-    line-height: normal;
-}
-
-.item2 {
-    grid-column: col-start 4 / span 1;
-    grid-row: 3;
-    float: right;
-    width: 30vw;
-    height: 20vw;
-    padding: 10px;
-    margin: 0;
-}
-#text2 {
-    grid-column: col-start 2/ span 1;
-    grid-row: 1;
-    padding: 20px;
-    float: left;
-    line-height: normal;
-}
-.item3 {
-    grid-column: col-start 3 / span 1;
-    grid-row: 2;
-}
-
-.item4 {
-    grid-column: col-start / 2;
-    grid-row: 3;
-
-}
-
-.item5 {
-    grid-column: col-start 2/ span 1;
-    grid-row: 2;
-
-}
-
-.item6 {
-    grid-column: col-start 3/ span 1;
-    grid-row: 2;
-
-}
-
-.item7 {
-    grid-column: col-start 2/ span 1;
-    grid-row: 3;
-}
 
 /*CONTEUDO*/
 
 /*FOOTER*/
 
-.container {
-    height: calc(3em + 4px);
-    grid-column: col-start 1/ span 3;
-    grid-row: 5;
-}
-
-.main-footer {
+.item-footer {
     grid-area: footer;
     margin: 0;
     margin-bottom: 20px;
-    width: 99.9%;
-    margin-left: 13px;
-    margin-top: -18px;
+    width: 96.7%;
+    margin-left: 43px;
+    margin-top: 68px;
     height: 150px;
     background-color: #eee;
     overflow: hidden;
@@ -287,6 +246,7 @@ p {
     flex-direction: column;
     position: relative;
     align-content: center;
+    text-transform: uppercase;
     border-radius: 5px;
 
 }
@@ -312,7 +272,6 @@ p {
 
 /*FOOTER*/
 
-
 /*RESPONSIVO*/
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
@@ -321,6 +280,7 @@ p {
         grid-template-areas:
             "header  header"
             "nav     nav"
+            "content content"
             "content content"
             "footer  footer";
     }
@@ -366,24 +326,26 @@ p {
         margin: 20px;
     }
 
-    .item2 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 1;
+    p1-image {
+        float: left;
+    }
+
+    .item1 {
+        float: left;
     }
 
     .item2 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 2;
+        float: right;
     }
 
     .item3 {
         grid-column: col-start 1/ span 2;
-        grid-row: 3;
+        grid-row: 6;
     }
 
     .item4 {
         grid-column: col-start 1/ span 2;
-        grid-row: 4;
+        grid-row: 9;
     }
 
     .item5 {
@@ -415,7 +377,5 @@ p {
     }
 
 }
-
-
 
 /*RESPONSIVO*/

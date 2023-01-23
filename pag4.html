@@ -6,13 +6,251 @@
     <meta name="author" content="Tcm22-tw-g01">
     <meta name="description" content="M2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./SRC/style2.css">
 
     <title>Tcm22-tw-g01</title>
 </head>
 
 <body>
-    <button type="button" onclick="loadXMLDoc()">Top Resultados da AL!</button>
-    <br><br>
-    <table id="demo"></table>
-    <script src="AL.js"></script>
+    <div class="wrapper">
+        <header class="main-head">
+            <div class="header-image">
+                <img class="header-image" src="SRC/imagens/banner.jpg" alt=”banner”>
+                <h1 class="header-text">Beisebol</h1>
+            </div>
+        </header>
+        <nav class="main-nav">
+            <ul class="menuItems">
+                <li class="nav-font"><a href='index.html' data-item='beisebol'>Home</a></li>
+                <li class="nav-font"><a href='pag1.html' data-item='origem'>Origem</a></li>
+                <li class="nav-font"><a href='#' data-item='beisebolpro'>Beisebol Profissional</a></li>
+                <li class="nav-font"><a href='#' data-item='formação'>Formação e Organização da Liga</a></li>
+                <li class="nav-font"><a href='#' data-item='regras'>Regras e Fundamentos</a></li>
+                <li class="nav-font"><a href='#' data-item='posições'>Posições</a></li>
+                <li class="nav-font"><a href='#' data-item='equipamento'>Equipamento</a></li>
+                <li class="nav-font"><a href='#' data-item='jogadores'>Jogadores Importantes</a></li>
+            </ul>
+        </nav>
+        <article class="content">
+            <button type="button" onclick="loadXMLDoc()">Get my CD collection</button>
+            <br><br>
+            <table id="demo"></table>
+            <script src="./SRC/AL.js"></script>
+
+            <div class="slideshow-container">
+                <h2 class="h2Mencoes"><strong>Menções Importantes: </strong></h2>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/RogerClemens.jpeg" alt="Roger Clemens">
+                    <div class="text">Roger Clemens</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/CyYoung.jpeg" alt="Cy Young">
+                    <div class="text">Cy Young</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/AlexRodriguez.jpeg" alt="Alex Rodriguez">
+                    <div class="text">Alex Rodriguez</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/PedroMartinez.jpeg" alt="Pedro Martinez">
+                    <div class="text">Pedro Martinez</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/TyCobb.jpeg" alt="Ty Cobb">
+                    <div class="text">Ty Cobb</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/WalterJohnson.jpeg" alt="Walte Johnson">
+                    <div class="text">Walter Johnson</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/TedWilliams.jpeg" alt="Ted Williams">
+                    <div class="text">Alex Rodriguez</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/PedroMartinez.jpeg" alt="Pedro Martinez">
+                    <div class="text">Ted Williams</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/PeteRose.jpeg" alt="Pete Rose">
+                    <div class="text">Pete Rose</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/ShoelessJoeJackson.jpeg" alt="Shoeless Joe Jackson">
+                    <div class="text">Shoeless Joe Jackson</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">11 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/RobertoClemente.jpeg" alt="Roberto Clemente">
+                    <div class="text">Roberto Clemente</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">12 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/LouGehrig.jpeg" alt="Lou Gehrig">
+                    <div class="text">Lou Gehrig</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">13 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/JackieRobinson.jpeg" alt="Jackie Robinson">
+                    <div class="text">Jackie Robinson</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 'mySlides', 'dot')">❮</a>
+                <a class="next" onclick="plusSlides(1, 'mySlides', 'dot')">❯</a>
+
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(2, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(3, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(4, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(5, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(6, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(7, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(8, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(9, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(10, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(11, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(12, 'mySlides', 'dot')"></span>
+                <span class="dot" onclick="currentSlide(13, 'mySlides', 'dot')"></span>
+            </div>
+
+            <div class="slideshow-container">
+                <h2><strong>Menções Importantes: </strong></h2>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">1 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/FernandoTatisJr..jpeg" alt="Fernando Tatis Jr.">
+                    <div class="text">Fernando Tatis Jr.</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">2 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/JuanSoto.jpeg" alt="Juan Soto">
+                    <div class="text">Juan Soto</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">3 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/BryceHarper.jpeg" alt="Bryce Harper">
+                    <div class="text">Bryce Harper</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <div class="numbertext">4 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/MookieBetts.jpeg" alt="Mookie Betts">
+                    <div class="text">Mookie Betts</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">5 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/JacobdeGrom.jpeg" alt="Jacob deGrom">
+                    <div class="text">Jacob deGrom</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">6 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/VladimirGuerreroJr..jpeg" alt="Vladimir Guerrero Jr.">
+                    <div class="text">Vladimir Guerrero Jr.</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <div class="numbertext">7 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/FreddieFreeman.jpeg" alt="Freddie Freeman">
+                </div>
+                <div class="mySlides2 fade">
+                    <div class="numbertext">8 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/RonaldAcunaJr.jpeg" alt="Ronald Acuna Jr.">
+                    <div class="text">Ronald Acuña Jr.</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">9 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/AnthonyRendon.jpeg" alt="Anthony Rendon">
+                    <div class="text">Anthony Rendon</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">10 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/MaxScherzer.jpeg" alt="Max Scherzer">
+                    <div class="text">Max Scherzer</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <div class="numbertext">11 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/DylanCease.jpeg" alt="Dylan Cease">
+                    <div class="text">Dylan Cease</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">12 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/YordanAlvarez.jpeg" alt="Yordan Alvarez">
+                    <div class="text">Yordan Alvarez</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <div class="numbertext">13 / 13</div>
+                    <img class="tbplayers" src="SRC/imagens/MannyMachado.jpeg" alt="Manny Machado">
+                    <div class="text">Manny Machado</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 'mySlides2', 'dot2')">❮</a>
+                <a class="next" onclick="plusSlides(1, 'mySlides2', 'dot2')">❯</a>
+
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide(1, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(2, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(3, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(4, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(5, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(6, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(7, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(8, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(9, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(10, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(11, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(12, 'mySlides2', 'dot2')"></span>
+                <span class="dot2" onclick="currentSlide(13, 'mySlides2', 'dot2')"></span>
+            </div>
+        </article>
+        <footer class="main-footer">
+            <div id="portfolio-wrapper">
+                <div id="portfolio" class="container">
+                    <div class="title">
+                        <h2>Beisebol</h2>
+                    </div>
+                    <span class="byline">Um website onde encontras tudo o que procuras sobre o teu desporto !</span>
+                    <p>
+                        <a class="highlight" href="index.html"> HOME </a>|
+                        <a class="highlight" Href="pag1.html"> Página 1 </a>|
+                        <a class="highlight" Href=""> Página 2 </a>|
+                        <a class="highlight" Href=""> Página 3 </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+<script src="SRC/caroussel.js"></script>
+
+
+</html>
