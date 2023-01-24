@@ -11,8 +11,8 @@ body {
 
 /* Carrossel */
 
-.mySlides2 {
-  display: none
+.naoPrimeiro {
+  display: none;
 }
 
 .tbplayers {
@@ -29,6 +29,7 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  float:none;
 
 }
 

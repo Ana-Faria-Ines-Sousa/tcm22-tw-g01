@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex= 1;
 let slideIndex1 = 1;
 
 function showSlides(n, slide, dot) {
@@ -6,17 +6,48 @@ function showSlides(n, slide, dot) {
     let slides = document.getElementsByClassName(slide);
     let dots = document.getElementsByClassName(dot);
 
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    if (slide === "mySlides"){
+        if (n > slides.length) { 
+            slideIndex = 1 
+            n = 1
+        }
+        else if (n === 0){
+            slideIndex1 = slides.length 
+            n = slides.length
+        }
+
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[n - 1].style.display = "block";
+        console.log(dots[n - 1]);
+        dots[n - 1].className += " active";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    else if (slide === "mySlides2"){
+        if (n > slides.length) { 
+            slideIndex1 = 1 
+            n = 1
+        }
+        else if (n === 0){
+            slideIndex1 = slides.length 
+            n = slides.length
+        }
+        
+        if (n < 1) { slideIndex1 = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[n - 1].style.display = "block";
+        console.log(dots[n - 1]);
+        dots[n - 1].className += " active";
     }
-    slides[n - 1].style.display = "block";
-    console.log(dots[n - 1]);
-    dots[n - 1].className += " active";
 }
 
 showSlides(slideIndex, "mySlides", "dot");
@@ -29,6 +60,7 @@ function plusSlides(n, slide, dot) {
         showSlides(slideIndex1 += n, slide, dot);
     }
 }
+
 
 function currentSlide(n, slide, dot) {
     showSlides(n, slide, dot);
