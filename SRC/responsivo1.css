@@ -1,120 +1,147 @@
-
 /*RESPONSIVO*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    .wrapper {
-      grid-template-columns: 1fr 3fr;
-      grid-template-areas:
-        "header  header"
-        "nav     nav"
-        "sidebar content"
-        "ad      footer";
-    }
-  
-    .main-head {
-      grid-area: header;
-      margin: 0;
-      height: 280px;
-      border-radius: 15px;
-  
-    }
-  
-    .header-image {
-      width: 90%;
-      height: 460px;
-      opacity: 4;
-      left: -40px;
-      border-radius: 15px;
-    }
-  
-    .header-text {
-      text-align: left;
-      font-size: 70px;
-      position: absolute;
-      top: 150px;
-      left: 380px;
-      transform: translate(-50%, -50%);
-      color: #ffffff;
-    }
-  
-    .item-nav {
-      display: none;
-    }
-    
-    .indextitle {
-      margin: 15px;
-      font-size: 3.5em;
-      
-    }
-    img {
-      height: 50%;
-      width: 70%;
-      margin: 20px;
-      border-radius: 30px;
-    }
-    
-    .item-content {
-      grid-area: content;
-      display: flex;
-      flex-direction: column;
-      
-    }
-    
-    #container {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      left: -500px;
-    }
-  
-    #item1 {
-      grid-column: col-start 1/ span 2;
-      grid-row: 1;
-      margin: 0px;
-  
-    }
-  
-    #item2 {
-      grid-column: col-start / span 2;
-      grid-row: 2;
-    }
-  
-    #item3 {
-      grid-column: col-start 1/ span 2;
-      grid-row: 3;
-    }
-  
-    #item4 {
-      grid-column: col-start 1/ span 2;
-      grid-row: 4;
-    }
-  
-    #item5 {
-      grid-column: col-start 1/ span 2;
-      grid-row: 5;
-  
-    }
-  
-    #item6 {
-      grid-column: col-start 1/ span 2;
-      grid-row: 6;
-  
-    }
-  
-    #item7 {
-      grid-column: col-start 1/ span 1;
-      grid-row: 7;
-    }
-  
-    .item-footer {
-      width: 72%;
-      left: 40px;
-      font-size: 13px;
-      padding-bottom: 30px;
-      background-color: #eee;
-      overflow: hidden;
-      scroll-behavior: smooth;
-      border-radius: 15px;
-    }
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
   }
-  
-  /*RESPONSIVO*/
+
+  .main-head {
+    grid-area: header;
+    margin: 0;
+    border-radius: 15px;
+
+  }
+
+  .header-image {
+    width: 92%;
+    height: 460px;
+    opacity: 4;
+    left: -35px;
+    border-radius: 15px;
+  }
+
+  .header-text {
+    text-align: left;
+    font-size: 70px;
+    position: absolute;
+    top: 150px;
+    left: 380px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+
+  .item-nav {
+    display: none;
+  }
+
+  .indextitle {
+    margin: 15px;
+    font-size: 3.5em;
+  }
+
+  .title h2 {
+    margin: 0px;
+    font-size: 4.4em;
+    text-align: center;
+
+  }
+
+  img {
+    height: 50%;
+    width: 70%;
+    margin: 10px;
+    border-radius: 30px;
+  }
+
+  figure {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.9);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    justify-content: center;
+    margin-left: -15%;
+
+  }
+
+  figure:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .item-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: center;
+  }
+
+  #item1 {
+    grid-column: col-start 1/ span 2;
+    grid-row: 1;
+
+  }
+
+  #item2 {
+    grid-column: col-start / span 2;
+    grid-row: 2;
+  }
+
+  #item3 {
+    grid-column: col-start 1/ span 2;
+    grid-row: 3;
+  }
+
+  #item4 {
+    grid-column: col-start 1/ span 2;
+    grid-row: 4;
+  }
+
+  #item5 {
+    grid-column: col-start 1/ span 2;
+    grid-row: 5;
+
+  }
+
+  #item6 {
+    grid-column: col-start 1/ span 2;
+    grid-row: 6;
+
+  }
+
+  #item7 {
+    grid-column: col-start 1/ span 1;
+    grid-row: 7;
+  }
+
+  .item-footer {
+    width: 83.5%;
+    height: 60%;
+    left: 15px;
+    font-size: 13px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 15px;
+  }
+  .byline{
+    font-size: 2em;
+
+  }
+  .highlight{
+    font-size: 3em;
+  }
+}
+
+/*RESPONSIVO*/
