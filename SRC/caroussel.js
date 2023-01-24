@@ -33,4 +33,3 @@ function plusSlides(n, slide, dot) {
 function currentSlide(n, slide, dot) {
     showSlides(n, slide, dot);
 }
-

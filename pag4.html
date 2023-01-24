@@ -10,7 +10,8 @@
     <title>Tcm22-tw-g01</title>
     <link rel="stylesheet" type="text/css" href="./SRC/style2.css">
     <link rel="stylesheet" type="text/css" href="SRC/caroussel.css">
-
+    <link rel="stylesheet" type="txt/css" href="SRC/Form.js">
+    <link rel="stylesheet" type="txt/css" href="SRC/forms.css">
 </head>
 
 <body>
@@ -160,7 +161,7 @@
                 </p>
                 <h2 class="indextitleL">Menções Importantes:</h2>
                 <div class="slideshow-container">
-
+                    
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 13</div>
                         <img class="tbplayers" src="SRC/imagens/RogerClemens.jpeg" alt="Roger Clemens">
@@ -235,8 +236,8 @@
                         <div class="text">Jackie Robinson</div>
                     </div>
 
-                    <a class="next" onclick="plusSlides(-1, 'mySlides', 'dot')">❯</a>
-                    <a class="prev" onclick="plusSlides(1, 'mySlides', 'dot')">❮</a>
+                    <a class="next" onclick="plusSlides(-1, 'mySlides', 'dot')">❮</a>
+                    <a class="prev" onclick="plusSlides(1, 'mySlides', 'dot')">❯</a>
 
                 </div>
                 <br>
@@ -495,7 +496,7 @@
             <button class="open-button" onclick="openForm()">Open Form</button>
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Website Form</h2>
+                    <h1>Website Form</h1>
                     <label for="fname">Primeiro Nome</label>
                     <input type="text" id="fname" name="firstname" value="" placeholder="Nome...">
         
@@ -669,8 +670,7 @@
         
                     <label for="subject" class="submit">O que podemos melhorar?</label>
                     <textarea id="subject" name="subject" value="" placeholder="Escreve aqui..."></textarea>
-        
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="submit2">
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                 </form>
             </div>
@@ -689,6 +689,9 @@
                     </p>
                 </div>
             </footer>
+            <script src="SRC/Form.js"></script>
+            <script src="SRC/AL.js"></script>
+            <script src="caroussel.js"></script>
         </div>
     </div>
 </body>
