@@ -71,7 +71,7 @@ a {
     position: relative;
 }
 
-.downloads{
+.downloads {
     float: left;
     color: #8f8f8f;
     font-size: 18px;
@@ -229,7 +229,7 @@ img {
 
 .p1-imageL {
     float: left;
-   margin: 27px;
+    margin: 27px;
 }
 
 .points {
@@ -237,10 +237,13 @@ img {
     width: 15vw;
     margin: 10px;
 }
-.shorts{
+
+.shorts {
     height: 35vw;
     width: 25vw;
-    margin: 10px;}
+    margin: 10px;
+}
+
 .video {
     float: inherit;
     height: 570px;
@@ -255,7 +258,7 @@ img {
 .item6 p,
 .item7 p {
     line-height: 1.4em;
-    font-weight:500;
+    font-weight: 500;
     text-transform: none;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -264,7 +267,7 @@ img {
 
 /*CONTEUDO*/
 
-.xmlxsxd{
+.xmlxsxd {
     font-style: normal;
 }
 
@@ -282,7 +285,7 @@ img {
     overflow: hidden;
     scroll-behavior: smooth;
     flex-direction: column;
-    position:static;
+    position: static;
     align-content: center;
     text-transform: uppercase;
     border-radius: 5px;
@@ -309,184 +312,142 @@ img {
 }
 
 /*FOOTER*/
+/*BUTTON AL & NL*/
+button {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 16px 26px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    background-color: #ccc;
+    color: black;
+    border: 2px solid #041E42;
+    position: relative;
+    box-shadow: 0 12px 16px 0 #041e424d, 0 17px 50px 0 #041e4288;
+
+}
+
+button:hover {
+    background-color: #BF0D3E;
+    color: white;
+}
+
+#button2 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 16px 26px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    background-color: #ccc;
+    color: #010101;
+    border: 2px solid #BF0D3E;
+    position: relative;
+    box-shadow: 0 12px 16px 0 #bf0d3f34, 0 17px 50px 0#bf0d3f4a;
+}
+
+#button2:hover {
+    background-color: #041E42;
+    color: white;
+}
+.btn-group{
+    margin-left: 10px;
+    margin-bottom: 80px;
+    border: none;
+    border-radius: 8px;
+    float: left;
+}
+.button3{
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin: -10px;
+    transition-duration: 0.4s;
+    background-color: #ccc;
+    color: black;
+    border: 2px solid #041E42;
+}
+.button3:hover {background-color: #314c74cf}
+
+.button3:active {
+  background-color:#032456cf;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*BUTTON AL & NL*/
 
 /*Pop-up*/
 
 .open-button {
-	background-color: rgb(99, 214, 53);
-	color: white;
-	padding: 16px 20px;
-	border: none;
-	cursor: pointer;
-	opacity: 0.8;
-	position:fixed;
-	bottom: 23px;
-	right: 40px;
-	width: 280px;
-
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
-	display: none;
-	position: fixed;
-	bottom: 0;
-	right: 15px;
-	border: 3px solid #f1f1f1;
-	z-index: 9;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-	max-width: 350px;
-	padding: 5px;
-	background-color: white;
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
-	width: 100%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
-	border: none;
-	background: #f1f1f1;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-	background-color: #ddd;
-	outline: none;
-  }
-  .submit2{
-    width: 50%;
-  }
-
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-	color: rgb(11, 129, 11);
-	padding: 16px 20px;
-	border: none;
-	cursor: pointer;
-    height: 80%;
-	width: 50%;
-	margin-bottom:10px;
-	opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-	background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-	opacity: 1;
-  }
-
-/*RESPONSIVO*/
-
-@media only screen and (max-width: 600px) and (min-width: 400px) {
-    .wrapper {
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-            "header  header"
-            "nav     nav"
-            "content content"
-            "content content"
-            "footer  footer";
-    }
-
-    .main-head {
-        grid-area: header;
-        margin: 0;
-        height: 180px;
-
-    }
-
-    .header-image {
-        width: 365px;
-        height: 160px;
-        opacity: 4;
-    }
-
-    .header-text {
-        text-align: left;
-        font-size: 35px;
-        position: absolute;
-        top: 30px;
-        left: 120px;
-        transform: translate(-50%, -50%);
-        color: #ffffff;
-    }
-
-    .main-nav {
-        display: none;
-        height: 50px;
-        margin-top: -20px;
-        width: 100%;
-    }
-
-    .nav-font {
-        display: none;
-
-    }
-
-    img {
-        height: 250px;
-        width: 360px;
-        margin: 20px;
-    }
-
-    p1-image {
-        float: left;
-    }
-
-    .item1 {
-        float: left;
-    }
-
-    .item2 {
-        float: right;
-    }
-
-    .item3 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 6;
-    }
-
-    .item4 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 9;
-    }
-
-    .item5 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 5;
-
-    }
-
-    .item6 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 6;
-
-    }
-
-    .item7 {
-        grid-column: col-start 1/ span 2;
-        grid-row: 7;
-    }
-
-
-    .main-footer {
-        width: 321px;
-        left: 3px;
-        font-size: 13px;
-        padding-bottom: 30px;
-        background-color: #eee;
-        overflow: hidden;
-        scroll-behavior: smooth;
-    }
+    background-color: rgb(99, 214, 53);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 40px;
+    width: 280px;
 
 }
 
-/*RESPONSIVO*/
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 350px;
+    padding: 5px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.submit2 {
+    width: 50%;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    color: rgb(11, 129, 11);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    height: 80%;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
