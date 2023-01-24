@@ -71,6 +71,15 @@ a {
     position: relative;
 }
 
+.downloads{
+    float: left;
+    color: #8f8f8f;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
 /*HEADER*/
 
 
@@ -170,7 +179,6 @@ a {
 
 /*CONTEUDO*/
 
-
 .item-content {
     grid-area: content;
     text-align: center;
@@ -196,6 +204,15 @@ a {
     padding: 0;
     text-align: left;
 }
+
+.indextitleL2 {
+    font-size: 25px;
+    margin-left: 10px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
 
 img {
     height: 20vw;
@@ -246,6 +263,10 @@ img {
 
 
 /*CONTEUDO*/
+
+.xmlxsxd{
+    font-style: normal;
+}
 
 /*FOOTER*/
 
