@@ -245,6 +245,22 @@ a {
     text-align: right;
 }
 
+.indextitleR20 {
+    font-size: 25px;
+    margin-top: 125px;
+    margin-right: 10px;
+    padding: 0;
+    text-align: right;
+}
+
+.indextitleR21 {
+    font-size: 25px;
+    margin-top: 315px;
+    margin-right: 10px;
+    padding: 0;
+    text-align: right;
+}
+
 .indextitleR8 {
     font-size: 25px;
     margin-top: 500px;
@@ -713,3 +729,20 @@ open-button:hover {
 .open-button:hover {
     opacity: 1;
 }
+
+
+.text-replacement {
+    display: block;
+    margin-left: 125px;
+    margin-top: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 370px;
+    width: 623px;
+    padding-top: 200px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: #333
+      url(https://preview.redd.it/breaking-san-diego-padres-sign-if-of-goose-to-a-5-year-5m-v0-20ijl3hv4it91.jpg?auto=webp&s=17432e36be1cdef0be81fd1afeebf2275dadce9f)
+      no-repeat;
+  }
