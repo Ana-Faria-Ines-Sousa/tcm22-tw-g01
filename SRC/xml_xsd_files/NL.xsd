@@ -1,4 +1,9 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://tcm22-tw-g01.netlify.app"
+    xmlns="https://tcm22-tw-g01.netlify.app"
+    elementFormDefault="qualified">
+  <xs:element name="NL">
+  <xs:element name="root_element">
   <xs:element name="root_element">
     <xs:complexType>
       <xs:sequence>
