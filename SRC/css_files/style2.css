@@ -388,7 +388,11 @@ button:hover {
     padding: 1em;
     border-radius: 6px;
 position: relative;}
-
+.divisao{
+    list-style: none;
+    font-weight:700 ;
+    font-size: medium;
+margin-left: -40px;}
 button #AL-listbutton [aria-expanded="true"] {
     background: red;
     justify-content: center;
@@ -409,6 +413,7 @@ li {
     padding: 1px;
     font-size: 10px;
     text-align: center;
+
 }
 
 #list[data-open="true"] {

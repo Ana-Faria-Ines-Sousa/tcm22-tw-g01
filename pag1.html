@@ -147,16 +147,23 @@
                     </button>
 
                     <ul id="list">
+                        <ul>
+                            <li class="divisao">Divisão Leste</li>
+                        </ul>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/orioles')"
                                 value='Baltimore Orioles'></li>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/redsox')"
                                 value='Boston Red Sox'></li>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/yankees')"
                                 value='New York Yankees'></li>
-                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/rays')" value='Tampa Bay Rays'>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/rays')"
+                                value='Tampa Bay Rays'>
                         </li>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/bluejays')"
                                 value='Toronto Blue Jays'></li>
+                        <ul>
+                            <li class="divisao">Divisão Central</li>
+                        </ul>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/whitesox')"
                                 value='Chicago White Sox'></li>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/guardians')"
@@ -167,6 +174,9 @@
                                 value='Kansas City Royals'></li>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/twins')"
                                 value='Minnesota Twins'></li>
+                        <ul>
+                            <li class="divisao">Divisão Oeste</li>
+                        </ul>
                         <li class="buttonAL"> <input type=button onClick="parent.open('https://www.mlb.com/astros')"
                                 value='Houston Astros'></li>
                         <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/angels')"
@@ -183,19 +193,27 @@
                     </button>
 
                     <ul id="listNL">
+                        <ul>
+                            <li class="divisao">Divisão Leste</li>
+                        </ul>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/braves')"
                                 value='Atlanta Braves'>
                         </li>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/marlins')"
                                 value='Miami Marlins'>
                         </li>
-                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/mets')" value='New York Mets'>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/mets')"
+                                value='New York Mets'>
                         </li>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/phillies')"
                                 value='Philadelphia Phillies'></li>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/nationals')"
                                 value='Washington Nationals'></li>
-                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/cubs')" value='Chicago Cubs'>
+                        <ul>
+                            <li class="divisao">Divisão Central</li>
+                        </ul>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/cubs')"
+                                value='Chicago Cubs'>
                         </li>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/reds')"
                                 value='Cincinnati Reds'>
@@ -206,6 +224,9 @@
                                 value='Pittsburgh Pirates'></li>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/cardinals')"
                                 value='St. Louis Cardinals'></li>
+                        <ul>
+                            <li class="divisao">Divisão Oeste</li>
+                        </ul>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/dbacks')"
                                 value='Arizona Diamondbacks'></li>
                         <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/rockies')"
@@ -232,7 +253,7 @@
                         //list.setAttribute('data-open', !open);
                         list.dataset.open = !open;
                     });
-                    
+
                     const button2 = document.querySelector("#NL-listbutton");
 
                     const listNL = document.querySelector("#listNL");
@@ -247,7 +268,7 @@
                     });
                 </script>
 
-                   
+
 
             </div>
             <div class="item3">
@@ -325,8 +346,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
-              
-               
+
+
 
 
 
