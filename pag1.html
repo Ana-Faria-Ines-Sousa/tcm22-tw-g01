@@ -138,6 +138,117 @@
                     representaram Filadélfia, Hartford (Connecticut), Boston, Chicago, Cincinnati, Louisville
                     (Kentucky), St. Louis e New York.
                 </p>
+                <p>Vê e visitas as equipas que constituem a MLB atualmente e os seus websites.</p>
+                <div class="expanding-list">
+                    <h2 class="indextitleL">MLB Equipas</h2>
+
+                    <button id="AL-listbutton">
+                        Liga Americana
+                    </button>
+
+                    <ul id="list">
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/orioles')"
+                                value='Baltimore Orioles'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/redsox')"
+                                value='Boston Red Sox'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/yankees')"
+                                value='New York Yankees'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/rays')" value='Tampa Bay Rays'>
+                        </li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/bluejays')"
+                                value='Toronto Blue Jays'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/whitesox')"
+                                value='Chicago White Sox'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/guardians')"
+                                value='Cleveland Guardians'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/tigers')"
+                                value='Detroit Tigers'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/royals')"
+                                value='Kansas City Royals'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/twins')"
+                                value='Minnesota Twins'></li>
+                        <li class="buttonAL"> <input type=button onClick="parent.open('https://www.mlb.com/astros')"
+                                value='Houston Astros'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/angels')"
+                                value='Los Angeles Angels'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/athletics')"
+                                value='Oakland Athletics'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/mariners')"
+                                value='Seattle Mariners'></li>
+                        <li class="buttonAL"><input type=button onClick="parent.open('https://www.mlb.com/rangers')"
+                                value='Texas Rangers'></li>
+                    </ul>
+                    <button id="NL-listbutton">
+                        Liga Nacional
+                    </button>
+
+                    <ul id="listNL">
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/braves')"
+                                value='Atlanta Braves'>
+                        </li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/marlins')"
+                                value='Miami Marlins'>
+                        </li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/mets')" value='New York Mets'>
+                        </li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/phillies')"
+                                value='Philadelphia Phillies'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/nationals')"
+                                value='Washington Nationals'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/cubs')" value='Chicago Cubs'>
+                        </li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/reds')"
+                                value='Cincinnati Reds'>
+                        </li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/brewers')"
+                                value='Milwaukee Brewers'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/pirates')"
+                                value='Pittsburgh Pirates'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/cardinals')"
+                                value='St. Louis Cardinals'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/dbacks')"
+                                value='Arizona Diamondbacks'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/rockies')"
+                                value='Colorado Rockies'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/dodgers')"
+                                value='Los Angeles Dodgers'></li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/padres')"
+                                value='San Diego Padres'>
+                        </li>
+                        <li class="buttonNL"><input type=button onClick="parent.open('https://www.mlb.com/giants')"
+                                value='San Francisco Giants'></li>
+                    </ul>
+                </div>
+
+                <script>const button = document.querySelector("#AL-listbutton");
+
+                    const list = document.querySelector("#list");
+
+                    button.addEventListener('click', () => {
+                        const open = button.getAttribute('aria-expanded') === "true";
+
+                        button.setAttribute('aria-expanded', !open);
+
+                        //list.setAttribute('data-open', !open);
+                        list.dataset.open = !open;
+                    });
+                    
+                    const button2 = document.querySelector("#NL-listbutton");
+
+                    const listNL = document.querySelector("#listNL");
+
+                    button2.addEventListener('click', () => {
+                        const open = button2.getAttribute('aria-expanded') === "true";
+
+                        button2.setAttribute('aria-expanded', !open);
+
+                        //list.setAttribute('data-open', !open);
+                        listNL.dataset.open = !open;
+                    });
+                </script>
+
+                   
+
             </div>
             <div class="item3">
                 <div class="title">
@@ -214,25 +325,30 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+              
+               
 
-                <h1>Overall da AL e NL season de 2022</h1>
 
-                <button type="button" onclick="loadXMLDoc()">AL Overall</button>
-                <br><br>
-                <table id="demo"></table>
 
-                <button type="button2" id="button2" onclick="loadXMLDoc()"></a>NL Overall</button>
-                <br><br>
-                <table id="demo2"></table>
-                <div class="btn-group">
-                    <h2>Clica aqui se não funcionar</h2>
-                    <a href="./SRC/xml_xsd_files/AL.xml" class="downloads" download><button class="button3">AL</button></a>
-                    <a href="./SRC/xml_xsd_files/AL.xsd" class="downloads" download><button class="button3">AL</button></a>
-                    <a href="./SRC/xml_xsd_files/NL.xml" class="downloads" download><button class="button3">NL</button></a>
-                    <a href="./SRC/xml_xsd_files/NL.xsd" class="downloads" download><button class="button3">NL</button></a>
-                </div>
+            </div>
+            <h1>Overall da AL e NL season de 2022</h1>
+
+            <button type="button" onclick="loadXMLDoc()">AL Overall</button>
+            <br><br>
+            <table id="demo"></table>
+
+            <button type="button2" id="button2" onclick="loadXMLDoc()"></a>NL Overall</button>
+            <br><br>
+            <table id="demo2"></table>
+            <div class="btn-group">
+                <h2>Clica aqui se não funcionar</h2>
+                <a href="./SRC/xml_xsd_files/AL.xml" class="downloads" download><button class="button3">AL</button></a>
+                <a href="./SRC/xml_xsd_files/AL.xsd" class="downloads" download><button class="button3">AL</button></a>
+                <a href="./SRC/xml_xsd_files/NL.xml" class="downloads" download><button class="button3">NL</button></a>
+                <a href="./SRC/xml_xsd_files/NL.xsd" class="downloads" download><button class="button3">NL</button></a>
             </div>
         </div>
+    </div>
     </div>
     <footer class="item-footer">
         <div id="portfolio" class="container">

@@ -349,14 +349,16 @@ button:hover {
     background-color: #041E42;
     color: white;
 }
-.btn-group{
+
+.btn-group {
     margin-left: 10px;
     margin-bottom: 80px;
     border: none;
     border-radius: 8px;
     float: left;
 }
-.button3{
+
+.button3 {
     float: left;
     font-size: 20px;
     font-weight: 600;
@@ -366,19 +368,130 @@ button:hover {
     color: black;
     border: 2px solid #041E42;
 }
-.button3:hover {background-color: #314c74cf}
+
+.button3:hover {
+    background-color: #314c74cf
+}
 
 .button3:active {
-  background-color:#032456cf;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #032456cf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.expanding-list {
+    max-width: 300px;
+    margin:10vh auto;
+    background: #B0BEC5;
+    padding: 1em;
+    border-radius: 6px;
+position: relative;}
+
+button #AL-listbutton [aria-expanded="true"] {
+    background: red;
+    justify-content: center;
+}
+
+#list {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: max-height 1.2s ease-in-out;
+    transition-timing-function: cubic-bezier(.22, .68, 0, 1.71);
+}
+
+li {
+    border-radius: 5px;
+    margin: 0 0 2px 0;
+    padding: 1px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#list[data-open="true"] {
+    overflow: auto;
+    max-height: 16em;
+    animation: hide-scroll 1s backwards;
+
+}
+.buttonAL{
+    margin: -15px;
+    font-size: 16px;
+}
+@keyframes hide-scroll {
+
+    from,
+    to {
+        overflow: hidden;
+    }
+}
+
+#AL-listbutton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 20px;
+    width: 85%;
+}
+
+button #NLL-listbutton [aria-expanded="true"] {
+    background: red;
+    justify-content: center;
+}
+
+#listNL {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: max-height 1.2s ease-in-out;
+    transition-timing-function: cubic-bezier(.22, .68, 0, 1.71);
+}
+
+li {
+    border-radius: 5px;
+    margin: 0 0 1px 0;
+    padding: 1px;
+    font-size: 10px;
+    text-align: center;
+}
+.buttonNL{
+    margin: -15px;
+    font-size: 16px;
+}
+#listNL[data-open="true"] {
+    overflow: auto;
+    max-height: 16em;
+    animation: hide-scroll 1s backwards;
+
+}
+
+@keyframes hide-scroll {
+
+    from,
+    to {
+        overflow: hidden;
+    }
+}
+
+#NL-listbutton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 20px;
+    width: 85%;
 }
 /*BUTTON AL & NL*/
 
 /*Pop-up*/
 
 .open-button {
-    background-color:  #041e42b0;
+    background-color: #041e42b0;
     border: 2px solid #041E42;
     color: white;
     padding: 16px 20px;
@@ -391,6 +504,7 @@ button:hover {
     width: 260px;
 
 }
+
 open-button:hover {
     background-color: #99032e84;
     color: white;
