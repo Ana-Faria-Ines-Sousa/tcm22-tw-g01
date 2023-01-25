@@ -708,3 +708,19 @@ open-button:hover {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+.text-replacement {
+    display: block;
+    margin-left: 125px;
+    margin-top: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 370px;
+    width: 623px;
+    padding-top: 200px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: #333
+      url(https://preview.redd.it/breaking-san-diego-padres-sign-if-of-goose-to-a-5-year-5m-v0-20ijl3hv4it91.jpg?auto=webp&s=17432e36be1cdef0be81fd1afeebf2275dadce9f)
+      no-repeat;
+  }
