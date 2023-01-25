@@ -328,13 +328,14 @@ button {
 }
 
 button:hover {
-    background-color: #BF0D3E;
+    background-color: #bf0d3fb7;
     color: white;
 }
 
 #button2 {
     font-size: 25px;
     font-weight: 600;
+    margin-top: -50px;
     padding: 16px 26px;
     border-radius: 8px;
     transition-duration: 0.4s;
@@ -346,7 +347,8 @@ button:hover {
 }
 
 #button2:hover {
-    background-color: #041E42;
+    background-color:#032456cf;
+    ;
     color: white;
 }
 
@@ -370,7 +372,7 @@ button:hover {
 }
 
 .button3:hover {
-    background-color: #314c74cf
+    background-color: #314c74cf;
 }
 
 .button3:active {
