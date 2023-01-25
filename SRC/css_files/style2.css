@@ -1,9 +1,9 @@
-*ul{
-    list-style-type:none;
+*ul {
+    list-style-type: none;
 }
 
-*li{
-    list-style-type:none;
+*li {
+    list-style-type: none;
 }
 
 
@@ -198,6 +198,14 @@ a {
     text-align: center;
 }
 
+.indextitleL {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 60px;
+    padding: 0;
+    text-align: left;
+}
+
 .indextitleL2 {
     font-size: 25px;
     margin-left: 10px;
@@ -206,8 +214,23 @@ a {
     text-align: right;
 }
 
-.indextitleL7{
-    font-variant: ;
+.indextitleL4 {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 450px;
+    padding: 0;
+    text-align: left;
+}
+
+.indextitleL5 {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 450px;
+    padding: 0;
+    text-align: left;
+}
+
+.indextitleL7 {
     font-size: 25px;
     margin-top: 300px;
     margin-right: 10px;
@@ -216,7 +239,7 @@ a {
 
 .indextitleR {
     font-size: 25px;
-    margin-top: 300px;
+    margin-top: 150px;
     margin-right: 10px;
     padding: 0;
     text-align: right;
@@ -230,63 +253,34 @@ a {
     text-align: center;
 }
 
-.indextitleL {
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 0px;
-    padding: 0;
-    text-align: left;
-}
 
-.indextitleL4{
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 450px;
-    padding: 0;
-    text-align: left;
-}
 
-.indextitleL5{
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 450px;
-    padding: 0;
-    text-align: left;
-}
-
-.bola{
+.bola {
     float: right;
 }
 
-.bats{
+.bats {
     float: right;
 }
 
-.cleats{
-    float:right
+.cleats {
+    float: right
 }
 
-.capacete1{
-    float:left;
-    position:relative;
+.capacete1 {
+    float: left;
+    position: relative;
 }
 
-.chapeu{
+.chapeu {
     float: left;
 }
 
-.capacete1{
-    float:right;
-    position:relative;
+.capacete1 {
+    float: right;
+    position: relative;
 }
 
-.indextitleL2 {
-    font-size: 25px;
-    margin-left: 10px;
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-}
 
 
 img {
@@ -297,17 +291,17 @@ img {
     border-radius: 5px;
 }
 
-.equipamento{
-    float:left;
-    margin:10px;
-    position:relative;
+.equipamento {
+    float: left;
+    margin: 10px;
+    position: relative;
 }
 
 
-.uniforme{
-    float:right;
-    margin:10px;
-    position:relative;
+.uniforme {
+    float: right;
+    margin: 10px;
+    position: relative;
 }
 
 .p1-imageR {
@@ -317,7 +311,17 @@ img {
 
 .p1-imageL {
     float: left;
-    margin: 27px;
+    margin: 26px;
+}
+
+p strong,
+p mark {
+    font-weight: 700;
+    font-style: oblique;
+    background: linear-gradient(-100deg, #b0bec58f, #7aaac2, #91bcd2cd);
+    border-radius: 2em 0;
+    padding: .5rem;
+
 }
 
 .points {
@@ -435,7 +439,7 @@ button:hover {
 }
 
 #button2:hover {
-    background-color:#032456cf;
+    background-color: #032456cf;
     ;
     color: white;
 }
@@ -445,11 +449,25 @@ button:hover {
     margin-bottom: 80px;
     border: none;
     border-radius: 8px;
-    float: left;
+    justify-content: center;
+}
+.btn-group2{
+    float: right;
+    margin-bottom: 80px;
+    border: none;
+    border-radius: 8px;
+}
+.btn-group h1 {
+    margin-top: -10px;
+}
+
+.btn-group2 h2 {
+    float: right;
+    margin-top: -30px;
 }
 
 .button3 {
-    float: left;
+    float: right;
     font-size: 20px;
     font-weight: 600;
     margin: -10px;
@@ -471,16 +489,19 @@ button:hover {
 
 .expanding-list {
     max-width: 300px;
-    margin:10vh auto;
+    margin: 20px auto;
     background: #B0BEC5;
     padding: 1em;
     border-radius: 6px;
-position: relative;}
-.divisao{
+}
+
+.divisao {
     list-style: none;
-    font-weight:700 ;
+    font-weight: 700;
     font-size: medium;
-margin-left: -40px;}
+    margin-left: -40px;
+}
+
 button #AL-listbutton [aria-expanded="true"] {
     background: red;
     justify-content: center;
@@ -510,10 +531,12 @@ li {
     animation: hide-scroll 1s backwards;
 
 }
-.buttonAL{
+
+.buttonAL {
     margin: -15px;
     font-size: 16px;
 }
+
 @keyframes hide-scroll {
 
     from,
@@ -553,10 +576,12 @@ li {
     font-size: 10px;
     text-align: center;
 }
-.buttonNL{
+
+.buttonNL {
     margin: -15px;
     font-size: 16px;
 }
+
 #listNL[data-open="true"] {
     overflow: auto;
     max-height: 16em;
@@ -581,6 +606,29 @@ li {
     padding: 20px 20px;
     width: 85%;
 }
+
+.button4 {
+    font-size: 21px;
+    font-weight: 600;
+    padding: 16px 26px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    margin: 15px;
+    background-color: #ccc;
+    color: black;
+    border: 2px solid #041E42;
+}
+
+.button3:hover {
+    background-color: #314c74cf;
+}
+
+.button3:active {
+    background-color: #032456cf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
 /*BUTTON AL & NL*/
 
 /*Pop-up*/
@@ -664,31 +712,4 @@ open-button:hover {
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
-}
-
-
-
-.downloads2{
-    float: right;
-}
-
-.button4 {
-    float: center;
-    font-size: 20px;
-    font-weight: 600;
-    margin: -10px;
-    transition-duration: 0.4s;
-    background-color: #ccc;
-    color: black;
-    border: 2px solid #041E42;
-}
-
-.button3:hover {
-    background-color: #314c74cf;
-}
-
-.button3:active {
-    background-color: #032456cf;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
 }
