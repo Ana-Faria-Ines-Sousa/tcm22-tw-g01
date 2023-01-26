@@ -292,11 +292,6 @@ a {
     float: left;
 }
 
-.capacete1 {
-    float: right;
-    position: relative;
-}
-
 
 
 img {
@@ -381,24 +376,7 @@ p mark {
 
 /*FOOTER*/
 
-.item-footer {
-    grid-area: footer;
-    margin: 0;
-    margin-bottom: 20px;
-    width: 96.7%;
-    margin-left: 43px;
-    margin-top: 68px;
-    height: 150px;
-    background-color: #eee;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    flex-direction: column;
-    position: static;
-    align-content: center;
-    text-transform: uppercase;
-    border-radius: 5px;
 
-}
 
 .highlight::before {
     content: attr(data-item);
@@ -474,7 +452,7 @@ button:active {
 
 .btn-group2 {
     float: right;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 8px;
 }
@@ -484,12 +462,10 @@ button:active {
 }
 
 .btn-group2 h2 {
-    float: right;
     margin-top: -30px;
 }
 
 .button3 {
-    float: right;
     font-size: 20px;
     font-weight: 600;
     margin: -10px;
