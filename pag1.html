@@ -350,9 +350,9 @@
 
             <div class="btn-group">
                 <h1>Overall da AL e NL season de 2022</h1>
-                <button type="button" id="button" onclick="loadXMLDoc()">AL Overall</button>
+                <button type="button" id="button" onclick="loadXMLDoc('./SRC/xml_xsd_files/AL.xml')">AL Overall</button>
                 <br><br>
-                <button type="button" id="button2" onclick="loadXMLDoc()"></a>NL Overall</button>
+                <button type="button" id="button2" onclick="loadXMLDoc('./SRC/xml_xsd_files/NL.xml')"></a>NL Overall</button>
                 <br><br>
                 <table id="demo3"></table>
                 <table id="demo2"></table>
@@ -389,7 +389,7 @@
 </html>
 <script>
 
-    function loadXMLDoc() {
+    function loadXMLDoc(file) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -397,7 +397,7 @@
                 myFunction(xmlhttp);
             }
         };
-        xmlhttp.open("GET", "./SRC/xml_xsd_files/NL.xml", true);
+        xmlhttp.open("GET", file, true);
         xmlhttp.send();
     }
     function myFunction(xml) {
@@ -406,6 +406,7 @@
         console.log(xml);
         var table = "<thead><tr><th>Nome</th><th>V</th><th>D</th><th>%</th></tr></thead>";
         var tbody = "<tbody>";
+            console.log(xml);
         var x = xmlDoc.getElementsByTagName("line");
         for (i = 0; i < x.length; i++) {
             tbody += "<tr><td>" +

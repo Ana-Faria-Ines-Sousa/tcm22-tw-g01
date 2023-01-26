@@ -1,96 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NL xmlns="https://tcm22-tw-g01.netlify.app"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://tcm22-tw-g01.netlify.app nl.xsd" >
-<root_element>
-    <line id="1">
-        <nome>LAD</nome>
-        <vitorias>111</vitorias>
-        <derrotas>51</derrotas>
-        <percentagem>.685</percentagem>
-    </line>
-    <line id="2">
-        <nome>ATL</nome>
-        <vitorias>101</vitorias>
-        <derrotas>61</derrotas>
-        <percentagem>.623</percentagem>
-    </line>
-    <line id="3">
-        <nome>NYM</nome>
-        <vitorias>101</vitorias>
-        <derrotas>61</derrotas>
-        <percentagem>.623</percentagem>
-    </line>
-    <line id="4">
-        <nome>STL</nome>
-        <vitorias>93</vitorias>
-        <derrotas>69</derrotas>
-        <percentagem>.574</percentagem>
-    </line>
-    <line id="5">
-        <nome>SD</nome>
-        <vitorias>89</vitorias>
-        <derrotas>73</derrotas>
-        <percentagem>.549</percentagem>
-    </line>
-    <line id="6">
-        <nome>PHI</nome>
-        <vitorias>87</vitorias>
-        <derrotas>75</derrotas>
-        <percentagem>.537</percentagem>
-    </line>
-    <line id="7">
-        <nome>MIL</nome>
-        <vitorias>86</vitorias>
-        <derrotas>76</derrotas>
-        <percentagem>.531</percentagem>
-    </line>
-    <line id="8">
-        <nome>SF</nome>
-        <vitorias>81</vitorias>
-        <derrotas>81</derrotas>
-        <percentagem>.500</percentagem>
-    </line>
-    <line id="9">
-        <nome>ARI</nome>
-        <vitorias>74</vitorias>
-        <derrotas>88</derrotas>
-        <percentagem>.457</percentagem>
-    </line>
-    <line id="10">
-        <nome>CHC</nome>
-        <vitorias>74</vitorias>
-        <derrotas>88</derrotas>
-        <percentagem>.457</percentagem>
-    </line>
-    <line id="11">
-        <nome>MIA</nome>
-        <vitorias>69</vitorias>
-        <derrotas>93</derrotas>
-        <percentagem>.426</percentagem>
-    </line>
-    <line id="12">
-        <nome>COL</nome>
-        <vitorias>68</vitorias>
-        <derrotas>94</derrotas>
-        <percentagem>.420</percentagem>
-    </line>
-    <line id="13">
-        <nome>CIN</nome>
-        <vitorias>62</vitorias>
-        <derrotas>100</derrotas>
-        <percentagem>.383</percentagem>
-    </line>
-    <line id="14">
-        <nome>PIT</nome>
-        <vitorias>62</vitorias>
-        <derrotas>100</derrotas>
-        <percentagem>.383</percentagem>
-    </line>
-    <line id="15">
-        <nome>WAS</nome>
-        <vitorias>55</vitorias>
-        <derrotas>107</derrotas>
-        <percentagem>.340</percentagem>
-    </line>
-</root_element>
+    xsi:schemaLocation="https://tcm22-tw-g01.netlify.app NL.xsd">
+    <root_element>
+        <line id="1">
+            <nome>LAD</nome>
+            <vitorias>111</vitorias>
+            <derrotas>51</derrotas>
+            <percentagem>.685</percentagem>
+        </line>
+        <line id="2">
+            <nome>ATL</nome>
+            <vitorias>101</vitorias>
+            <derrotas>61</derrotas>
+            <percentagem>.623</percentagem>
+        </line>
+        <line id="3">
+            <nome>NYM</nome>
+            <vitorias>101</vitorias>
+            <derrotas>61</derrotas>
+            <percentagem>.623</percentagem>
+        </line>
+        <line id="4">
+            <nome>STL</nome>
+            <vitorias>93</vitorias>
+            <derrotas>69</derrotas>
+            <percentagem>.574</percentagem>
+        </line>
+        <line id="5">
+            <nome>SD</nome>
+            <vitorias>89</vitorias>
+            <derrotas>73</derrotas>
+            <percentagem>.549</percentagem>
+        </line>
+        <line id="6">
+            <nome>PHI</nome>
+            <vitorias>87</vitorias>
+            <derrotas>75</derrotas>
+            <percentagem>.537</percentagem>
+        </line>
+        <line id="7">
+            <nome>MIL</nome>
+            <vitorias>86</vitorias>
+            <derrotas>76</derrotas>
+            <percentagem>.531</percentagem>
+        </line>
+        <line id="8">
+            <nome>SF</nome>
+            <vitorias>81</vitorias>
+            <derrotas>81</derrotas>
+            <percentagem>.500</percentagem>
+        </line>
+        <line id="9">
+            <nome>ARI</nome>
+            <vitorias>74</vitorias>
+            <derrotas>88</derrotas>
+            <percentagem>.457</percentagem>
+        </line>
+        <line id="10">
+            <nome>CHC</nome>
+            <vitorias>74</vitorias>
+            <derrotas>88</derrotas>
+            <percentagem>.457</percentagem>
+        </line>
+        <line id="11">
+            <nome>MIA</nome>
+            <vitorias>69</vitorias>
+            <derrotas>93</derrotas>
+            <percentagem>.426</percentagem>
+        </line>
+        <line id="12">
+            <nome>COL</nome>
+            <vitorias>68</vitorias>
+            <derrotas>94</derrotas>
+            <percentagem>.420</percentagem>
+        </line>
+        <line id="13">
+            <nome>CIN</nome>
+            <vitorias>62</vitorias>
+            <derrotas>100</derrotas>
+            <percentagem>.383</percentagem>
+        </line>
+        <line id="14">
+            <nome>PIT</nome>
+            <vitorias>62</vitorias>
+            <derrotas>100</derrotas>
+            <percentagem>.383</percentagem>
+        </line>
+        <line id="15">
+            <nome>WAS</nome>
+            <vitorias>55</vitorias>
+            <derrotas>107</derrotas>
+            <percentagem>.340</percentagem>
+        </line>
+    </root_element>
+</NL>

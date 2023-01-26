@@ -1,98 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>  
-<AL xmlns="https://tcm22-tw-g01.netlify.app"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://tcm22-tw-g01.netlify.app al.xsd" >
-<root_element>
-    
-    <line id="1">
-        <nome>HOU</nome>
-        <vitorias>106</vitorias>
-        <derrotas>56</derrotas>
-        <percentagem>.654</percentagem>
-    </line>
-    <line id="2">
-        <nome>NYY</nome>
-        <vitorias>99</vitorias>
-        <derrotas>63</derrotas>
-        <percentagem>.611</percentagem>
-    </line>
-    <line id="3">
-        <nome>TOR</nome>
-        <vitorias>92</vitorias>
-        <derrotas>70</derrotas>
-        <percentagem>.568</percentagem>
-    </line>
-    <line id="4">
-        <nome>CLE</nome>
-        <vitorias>92</vitorias>
-        <derrotas>70</derrotas>
-        <percentagem>.568</percentagem>
-    </line>
-    <line id="5">
-        <nome>SEA</nome>
-        <vitorias>90</vitorias>
-        <derrotas>72</derrotas>
-        <percentagem>.556</percentagem>
-    </line>
-    <line id="6">
-        <nome>TBR</nome>
-        <vitorias>86</vitorias>
-        <derrotas>76</derrotas>
-        <percentagem>.531</percentagem>
-    </line>
-    <line id="7">
-        <nome>BAL</nome>
-        <vitorias>83</vitorias>
-        <derrotas>79</derrotas>
-        <percentagem>.512</percentagem>
-    </line>
-    <line id="8">
-        <nome>CHW</nome>
-        <vitorias>81</vitorias>
-        <derrotas>81</derrotas>
-        <percentagem>.500</percentagem>
-    </line>
-    <line id="9">
-        <nome>MIN</nome>
-        <vitorias>78</vitorias>
-        <derrotas>84</derrotas>
-        <percentagem>.481</percentagem>
-    </line>
-    <line id="10">
-        <nome>BOS</nome>
-        <vitorias>78</vitorias>
-        <derrotas>84</derrotas>
-        <percentagem>.481</percentagem>
-    </line>
-    <line id="11">
-        <nome>LAA</nome>
-        <vitorias>73</vitorias>
-        <derrotas>89</derrotas>
-        <percentagem>.451</percentagem>
-    </line>
-    <line id="12">
-        <nome>TEX</nome>
-        <vitorias>68</vitorias>
-        <derrotas>94</derrotas>
-        <percentagem>.420</percentagem>
-    </line>
-    <line id="13">
-        <nome>DET</nome>
-        <vitorias>66</vitorias>
-        <derrotas>96</derrotas>
-        <percentagem>.401</percentagem>
-    </line>
-    <line id="14">
-        <nome>KCR</nome>
-        <vitorias>65</vitorias>
-        <derrotas>97</derrotas>
-        <percentagem>.401</percentagem>
-    </line>
-    <line id="15">
-        <nome>OAK</nome>
-        <vitorias>60</vitorias>
-        <derrotas>102</derrotas>
-        <percentagem>.370</percentagem>
-    </line>
-</root_element>
-</al>
+<?xml version="1.0" encoding="utf-8"?>
+<AL>
+    <root_element>
+
+        <line id="1">
+            <nome>HOU</nome>
+            <vitorias>106</vitorias>
+            <derrotas>56</derrotas>
+            <percentagem>.654</percentagem>
+        </line>
+        <line id="2">
+            <nome>NYY</nome>
+            <vitorias>99</vitorias>
+            <derrotas>63</derrotas>
+            <percentagem>.611</percentagem>
+        </line>
+        <line id="3">
+            <nome>TOR</nome>
+            <vitorias>92</vitorias>
+            <derrotas>70</derrotas>
+            <percentagem>.568</percentagem>
+        </line>
+        <line id="4">
+            <nome>CLE</nome>
+            <vitorias>92</vitorias>
+            <derrotas>70</derrotas>
+            <percentagem>.568</percentagem>
+        </line>
+        <line id="5">
+            <nome>SEA</nome>
+            <vitorias>90</vitorias>
+            <derrotas>72</derrotas>
+            <percentagem>.556</percentagem>
+        </line>
+        <line id="6">
+            <nome>TBR</nome>
+            <vitorias>86</vitorias>
+            <derrotas>76</derrotas>
+            <percentagem>.531</percentagem>
+        </line>
+        <line id="7">
+            <nome>BAL</nome>
+            <vitorias>83</vitorias>
+            <derrotas>79</derrotas>
+            <percentagem>.512</percentagem>
+        </line>
+        <line id="8">
+            <nome>CHW</nome>
+            <vitorias>81</vitorias>
+            <derrotas>81</derrotas>
+            <percentagem>.500</percentagem>
+        </line>
+        <line id="9">
+            <nome>MIN</nome>
+            <vitorias>78</vitorias>
+            <derrotas>84</derrotas>
+            <percentagem>.481</percentagem>
+        </line>
+        <line id="10">
+            <nome>BOS</nome>
+            <vitorias>78</vitorias>
+            <derrotas>84</derrotas>
+            <percentagem>.481</percentagem>
+        </line>
+        <line id="11">
+            <nome>LAA</nome>
+            <vitorias>73</vitorias>
+            <derrotas>89</derrotas>
+            <percentagem>.451</percentagem>
+        </line>
+        <line id="12">
+            <nome>TEX</nome>
+            <vitorias>68</vitorias>
+            <derrotas>94</derrotas>
+            <percentagem>.420</percentagem>
+        </line>
+        <line id="13">
+            <nome>DET</nome>
+            <vitorias>66</vitorias>
+            <derrotas>96</derrotas>
+            <percentagem>.401</percentagem>
+        </line>
+        <line id="14">
+            <nome>KCR</nome>
+            <vitorias>65</vitorias>
+            <derrotas>97</derrotas>
+            <percentagem>.401</percentagem>
+        </line>
+        <line id="15">
+            <nome>OAK</nome>
+            <vitorias>60</vitorias>
+            <derrotas>102</derrotas>
+            <percentagem>.370</percentagem>
+        </line>
+    </root_element>
+</AL>
