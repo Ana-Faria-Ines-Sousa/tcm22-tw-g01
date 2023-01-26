@@ -509,6 +509,7 @@ button:hover {
     background: #B0BEC5;
     padding: 1em;
     border-radius: 6px;
+
 }
 
 .divisao {
@@ -516,6 +517,7 @@ button:hover {
     font-weight: 700;
     font-size: medium;
     margin-left: -40px;
+
 }
 
 button #AL-listbutton [aria-expanded="true"] {
@@ -530,6 +532,7 @@ button #AL-listbutton [aria-expanded="true"] {
     padding: 0;
     transition: max-height 1.2s ease-in-out;
     transition-timing-function: cubic-bezier(.22, .68, 0, 1.71);
+
 }
 
 li {
@@ -539,12 +542,14 @@ li {
     font-size: 10px;
     text-align: center;
 
+
 }
 
 #list[data-open="true"] {
     overflow: auto;
     max-height: 16em;
     animation: hide-scroll 1s backwards;
+    overflow-x: hidden;
 
 }
 
@@ -583,6 +588,7 @@ button #NLL-listbutton [aria-expanded="true"] {
     padding: 0;
     transition: max-height 1.2s ease-in-out;
     transition-timing-function: cubic-bezier(.22, .68, 0, 1.71);
+
 }
 
 li {
@@ -591,6 +597,7 @@ li {
     padding: 1px;
     font-size: 10px;
     text-align: center;
+
 }
 
 .buttonNL {
@@ -602,6 +609,7 @@ li {
     overflow: auto;
     max-height: 16em;
     animation: hide-scroll 1s backwards;
+    overflow-x: hidden;
 
 }
 
