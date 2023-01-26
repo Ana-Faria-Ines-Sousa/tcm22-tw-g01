@@ -10,8 +10,6 @@
     <title>Tcm22-tw-g01</title>
     <link rel="stylesheet" type="text/css" href="./SRC/css_files/style2.css">
     <link rel="stylesheet" type="text/css" href="./SRC/css_files/responsivo2.css">
-    <script src="./SRC/js_files/ALNL.js"></script>
-
 
 </head>
 
@@ -95,7 +93,7 @@
             </div>
             <div class="item2">
                 <div class="title">
-                    <h2 id="subtitulo2" class="indextitleR20">Beisebol Profissional</h2>
+                    <h2 id="subtitulo2" class="indextitleR">Beisebol Profissional</h2>
                     <img class="p1-imageR" src="./SRC/imagens/beisebol_profissional.jpg" alt="baseball profissional">
                 </div>
                 <p>Dois desenvolvimentos importantes na história desta modalidade ocorreram no período pós-Guerra
@@ -352,17 +350,16 @@
 
             <div class="btn-group">
                 <h1>Overall da AL e NL season de 2022</h1>
-                <button type="button" id="buttonzau" onclick="loadXMLDoc()">AL Overall</button>
+                <button type="button" id="button" onclick="loadXMLDoc()">AL Overall</button>
                 <br><br>
-                <button type="button2" id="button2" onclick="loadXMLDoc()"></a>NL Overall</button>
+                <button type="button" id="button2" onclick="loadXMLDoc()"></a>NL Overall</button>
                 <br><br>
-                <table id="buttonzau"></table>
+                <table id="demo3"></table>
                 <table id="demo2"></table>
                 <h1>Overall de ambas as ligas juntas</h1>
                 <a href="./Tabela.html"><button class="button4">CLICA AQUI!</button></a>
                 <table id="demo"></table>
             </div>
-            
             <div class="btn-group2">
                 <h2>Clica aqui se não funcionar</h2>
                 <a href="./SRC/xml_xsd_files/AL.xml" class="downloads" download><button class="button3">AL</button></a>
@@ -390,4 +387,42 @@
 </body>
 
 </html>
+<script>
 
+    function loadXMLDoc() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(xmlhttp);
+                myFunction(xmlhttp);
+            }
+        };
+        xmlhttp.open("GET", "./SRC/xml_xsd_files/NL.xml", true);
+        xmlhttp.send();
+    }
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        console.log(xml);
+        var table = "<thead><tr><th>Nome</th><th>V</th><th>D</th><th>%</th></tr></thead>";
+        var tbody = "<tbody>";
+        var x = xmlDoc.getElementsByTagName("line");
+        for (i = 0; i < x.length; i++) {
+            tbody += "<tr><td>" +
+                x[i].getElementsByTagName("nome")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("vitorias")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("derrotas")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("percentagem")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+        }
+        tbody += "</tbody>";
+        var full = table + tbody;
+        console.log(tbody);
+        console.log(table);
+        document.getElementById('demo2').innerHTML = full
+    }
+
+</script>

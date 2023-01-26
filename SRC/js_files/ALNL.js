@@ -31,7 +31,7 @@ function myFunction(xml) {
   var full = table + tbody;
   console.log(tbody);
   console.log(table);
-  document.getElementById('buttonzau').innerHTML = full
+  document.getElementById('demo3').innerHTML = full
 }
 
 
