@@ -201,11 +201,17 @@ a {
 .indextitleL {
     font-size: 25px;
     margin-left: 30px;
-    margin-top: 60px;
+    margin-top: 180px;
     padding: 0;
     text-align: left;
 }
-
+.indextitleL99{
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 80px;
+    padding: 0;
+    text-align: left;
+}
 .indextitleL2 {
     font-size: 25px;
     margin-left: 10px;
@@ -247,7 +253,7 @@ a {
 
 .indextitleR20 {
     font-size: 25px;
-    margin-top: 125px;
+    margin-top: 105px;
     margin-right: 10px;
     padding: 0;
     text-align: right;

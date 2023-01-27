@@ -208,7 +208,7 @@ a {
 img {
   height: 15vw;
   width: 24vw;
-  margin: 10 px;
+  margin: 10px;
   align-content: space-around;
   border-radius: 5px;
 }
@@ -218,7 +218,6 @@ figure {
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  justify-content: first baseline;
   margin-left: -15px;
 }
 

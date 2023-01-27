@@ -1,5 +1,5 @@
 /*RESPONSIVO*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (max-width: 700px) and (min-width: 400px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -200,7 +200,6 @@ ul p{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    justify-content: baseline;
   }
 
   #container {
@@ -322,7 +321,7 @@ display: none;
     font-size: 1em;
     line-height: 2em;
   }
-  
+
 }
 
 /*RESPONSIVO*/
