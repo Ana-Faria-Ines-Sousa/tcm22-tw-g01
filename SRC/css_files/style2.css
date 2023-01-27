@@ -377,6 +377,24 @@ p mark {
 /*FOOTER*/
 
 
+.item-footer {
+    grid-area: footer;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 101%;
+    margin-left: 15px;
+    margin-top: 58px;
+    height: 150px;
+    background-color: #eee;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
 
 .highlight::before {
     content: attr(data-item);
@@ -452,7 +470,7 @@ button:active {
 
 .btn-group2 {
     float: right;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     border: none;
     border-radius: 8px;
 }
@@ -462,24 +480,28 @@ button:active {
 }
 
 .btn-group2 h2 {
-    margin-top: -30px;
+    margin-bottom: 40px;
 }
 
-.button3 {
+.button-link {
     font-size: 20px;
     font-weight: 600;
-    margin: -10px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    border-radius: 8px;
+    padding: 16px 26px;
     transition-duration: 0.4s;
     background-color: #ccc;
     color: black;
     border: 2px solid #041E42;
 }
 
-.button3:hover {
+.button-link:hover {
     background-color: #314c74cf;
 }
 
-.button3:active {
+.button-link:active {
     background-color: #032456cf;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
