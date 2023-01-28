@@ -2,34 +2,27 @@
     targetNamespace="https://tcm22-tw-g01.netlify.app"
     xmlns="https://tcm22-tw-g01.netlify.app"
     elementFormDefault="qualified">
-  <xs:element name="NL">
-  <xs:element name="root_element">
-  <xs:element name="root_element">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="NL">
-          <xs:complexType>
+    <xs:element name="NL">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="root_element">
+            <xs:complexType>
             <xs:sequence>
-              <xs:element name="resultado">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="line" maxOccurs="unbounded" minOccurs="0">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element type="xs:string" name="nome"/>
-                          <xs:element type="xs:byte" name="vitorias"/>
-                          <xs:element type="xs:byte" name="derrotas"/>
-                          <xs:element type="xs:float" name="percentagem"/>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+            <xs:element maxOccurs="unbounded" name="line">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="nome" type="xs:string" />
+                  <xs:element name="vitorias" type="xs:unsignedByte" />
+                  <xs:element name="derrotas" type="xs:unsignedByte" />
+                  <xs:element name="percentagem" type="xs:decimal" />
+                </xs:sequence>
+                <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+              </xs:complexType>
+          </xs:element>
+          </xs:sequence>
+      </xs:complexType>
+      </xs:element>
+    </xs:schema>
