@@ -56,9 +56,31 @@ O nosso website não tem regras específicas de utilização, o mesmo focou-se n
 
 Como foi mencionado anteriormente, no nosso website existe hiperligações entre itens(imagens no índex ao conteúdo nas páginas seguintes) e o header que contem um menu com os nomes dos temas abordados e no banner/footer contém as ligações entre páginas para ajudar o utilizador e facilitar a sua nacegação.
 
+## Validação de Formulários
+
+Os nosso formulários são validados pois estão divididos por texto e opções, onde nos locais defenidos para texto os nosso utilizadores só os podem preencher com o mesmo e nas opções só podem escolher e defenir as opções que fornecemos. 
+
 ## Validação do HTML e CSS
 
 Os nosso ficherios HTML e CSS estão validades na sua totalidade não apresentando erros nem problemas, os mesmo foram validados apartir do validadadores fornecidos pelo W3C.
+
+HTML validados:
+![Index](/SRC/validados/index_validado.png)
+![Página 1](/SRC/validados/pag1_validado.png)
+![Página 2](/SRC/validados/pag2_validado.png)
+![Página 3](/SRC/validados/pag3_validado.png)
+![Página 4](/SRC/validados/pag4_validado.png)
+![Tabela](/SRC/validados/Tabela_validado.png)
+
+CSS validados:
+![Carrossel](/SRC/validados/caroussel_validado.png)
+![Formulário](/SRC/validados/forms_validado.png)
+![Responsivos](/SRC/validados/responsivo1_validado.png)
+![Responsivos2](/SRC/validados/responsivo2_validado.png)
+![Style](/SRC/validados/style_validado.png)
+![Style2](/SRC/validados/style_validado.png)
+![Tabela](/SRC/validados/tabela_validado.png)
+
 
 ## Detalhes de Implementação
 
