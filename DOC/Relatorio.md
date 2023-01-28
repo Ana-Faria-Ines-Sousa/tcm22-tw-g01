@@ -34,6 +34,8 @@ Demonstrando o nosso estudo e Planeamento por detrás da interface do nosso proj
 
 ## Apresentação do resultado final e comparação com o estudo inicial
 
+No nosso estudo inicial queriamos criar algo user friendly o que acreditamos ter mantido no nosso resultado final, assim como pretendiamos criar slideshow de imagens, um layout de imagens que agradace ao leitor e fosse agradavél. Apesar de na sua maioria o nosso resultado final se assemelhar ao inicial acabamos por nao adotar a sidenav que foi pensada e ponderada assim como o laypit das imagens não se encontra igual ao que pretendiamos inicialmente.
+
 ## Produto
 
 ## Descrição do produto
@@ -52,11 +54,15 @@ O nosso website não tem regras específicas de utilização, o mesmo focou-se n
 
 ## Ajuda à navegação
 
-Como foi mencionado anteriormente, no nosso website existe hiperligações entre itens(imagens no índex ao conteúdo nas páginas seguintes) e o header que contem um menu com os nomes dos temas abordados e no banner/footer contém as ligações entre páginas.
+Como foi mencionado anteriormente, no nosso website existe hiperligações entre itens(imagens no índex ao conteúdo nas páginas seguintes) e o header que contem um menu com os nomes dos temas abordados e no banner/footer contém as ligações entre páginas para ajudar o utilizador e facilitar a sua nacegação.
 
 ## Validação do HTML e CSS
 
+Os nosso ficherios HTML e CSS estão validades na sua totalidade não apresentando erros nem problemas, os mesmo foram validados apartir do validadadores fornecidos pelo W3C.
+
 ## Detalhes de Implementação
+
+Isto foi o que implementamos no nosso website.
 
 - [x] Área temática “Desporto”;
 - [x] 4 páginas HTML estáticas (Temos 5);
